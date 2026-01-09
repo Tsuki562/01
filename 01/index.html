@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>无声的语言 | Silent Language</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <h1>无声的语言 | Silent Language</h1>
+      <p class="subtitle">让沟通不止于声音，让视觉成为语言。</p>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
+  <main>
+    <section class="section about" aria-labelledby="about-title">
+      <h2 id="about-title">项目简介</h2>
+      <p>Silent Language 是一个融合人工智能与无障碍设计的概念项目，它让听障人士通过视觉图形‘看到’声音的情绪与节奏，以光与形的方式重新诠释沟通的意义。</p>
+    </section>
+    <section class="section showcase" aria-labelledby="showcase-title">
+      <div class="showcase-header">
+        <h2 id="showcase-title">视觉演示</h2>
+        <div class="controls">
+          <div class="segmented" role="radiogroup" aria-label="选择声音类型">
+            <button class="seg-item active" role="radio" aria-checked="true" data-mode="bass">低沉</button>
+            <button class="seg-item" role="radio" aria-checked="false" data-mode="treble">高亢</button>
+            <button class="seg-item" role="radio" aria-checked="false" data-mode="joyful">欢快</button>
+            <button class="seg-item" role="radio" aria-checked="false" data-mode="melancholic">忧郁</button>
+          </div>
+          <button id="playVisual" class="primary">随机视觉声音</button>
+          <button id="startMic" class="secondary" aria-live="polite">开始麦克风分析</button>
+          <span id="emotionTag" class="tag" aria-label="当前情绪">静音</span>
+        </div>
+      </div>
+      <canvas id="visualCanvas" aria-label="声音可视化"></canvas>
+      <p class="hint">将鼠标移动到画布上，感受几何图形的轻微波动。</p>
+    </section>
+    <section class="section concept" aria-labelledby="concept-title">
+      <h2 id="concept-title">设计理念</h2>
+      <ul class="concept-list">
+        <li><span>包容与平等：</span>让听障人士拥有全新的“视觉沟通方式”</li>
+        <li><span>科技与人文融合：</span>以 AI 为桥梁，让声音转化为艺术</li>
+        <li><span>情绪共鸣：</span>不同色彩代表不同的情绪能量</li>
+      </ul>
+    </section>
+    <section class="section future" aria-labelledby="future-title">
+      <h2 id="future-title">未来展望</h2>
+      <p>未来，这套系统可以延伸至音乐表演、公共空间、教育场景，让声音的美以视觉形式传递给每一个人。</p>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Silent Language Project | Designed for Inclusive AI Future</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
